@@ -1,0 +1,138 @@
+body {
+  font-family: 'Open Sans';
+}
+
+.dashboard-container {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.dashboard-header {
+  margin-bottom: 42px;
+  margin-left: 40px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.dashboard-list {
+  display: grid;
+  grid-template-columns: repeat(3, 332px);
+  grid-auto-rows: 332px;
+  grid-gap: 32px;
+}
+ 
+.dashboard-list__item {
+  display: block;
+  padding: 20px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.25);
+  text-decoration: none !important;
+  animation: appear 0.2s ease-in;
+  -webkit-animation: appear 0.2s ease-in;;
+}
+
+.dashboard-list__item:hover {
+  background: var(--Logo-Turquoise, #78E08F);
+  cursor: pointer;
+}
+
+.dashboard-list__item-status {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid transparent
+}
+
+.dashboard-list__item-image {
+  display: block;
+  min-height: 138px;
+  margin: 40px auto;
+  margin-bottom: 26px;
+} 
+
+.dashboard-list__item-title {
+  color: #000;
+  text-decoration: none !important;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.dashboard-personal {
+  width: 504px;
+  height: 445px;
+  margin-left: 104px;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.25);
+}
+
+.dashboard-personal__detail {
+  margin-left: 104px;
+  margin-top: 36px;
+  max-width: 504px;
+}
+
+.dashboard-personal-table {
+  width: 100%;
+  margin-top: 16px;
+}
+
+.dashboard-personal-table td {
+  vertical-align: top;
+}
+
+.dashboard-list__item-small-title {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+.dashboard-personal-large-number {
+  line-height: 120px;
+  font-size: 96px;
+  font-weight: 700;
+}
+
+.dashboard-personal-text {
+  line-height: 36px;
+}
+
+.dashboard-list__item-form__content {
+  width: 836px;
+}
+
+@media (max-width: 520px) {
+  .dashboard-container {
+    margin-left: 0px;
+  }
+
+  .dashboard-list { 
+    grid-template-columns: repeat(1, 1fr); 
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .dashboard-container {
+    flex-direction: column;
+    margin-left: 24px;
+  }
+
+  .dashboard-personal {
+    margin-top: 24px;
+    margin-left: 0px;
+    margin-right: 24px;
+  }
+
+  .dashboard-list { 
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Webpage description goes here" />
+    <meta charset="utf-8">
+
+    <title>Курс "План продаж S&OP"</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../common.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+    <script defer src="introduce.js"></script>
+    <style>
+      .course-container {
+        margin-left: 40px;
+      }
+      .course-container__content {
+        width: 1064px;
+        margin: 48px auto;
+        line-height: 30px;
+      }
+      .tooltip {
+        margin-top: 32px;
+      }
+      .button {
+        margin-top: 48px;
+        cursor: pointer;
+      }
+      .complete-button {
+        margin: 48px 36%;
+      }
+      .complete-dialog {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="course-container">
+      <div class="breadcrumbs">
+        <a class="breadcrumb-link" href="../../dashboard/dashboard.html">Главная страница</a>
+        <a class="breadcrumb-link" href="../course.html" >Курс "План продаж S&OP"</a> 
+        <a class="breadcrumb-link finish-link">Знакомство с ключевыми показателями</a>
+      </div>
+
+      <div class="course-container__content">
+        <h2>Знакомства с ключевыми показателями</h2>
+
+        <div class="tooltip">
+          <div class="tooltip-avatar"></div>
+          <div class="tooltip-content">
+            <div class="tooltip-content__title">
+              Пётр Семёнович ПГК:
+            </div>
+          
+            <div class="tooltip-content__text">
+              -Привет! Меня зовут XXX, я руковожу департаментом логистики в ПГК. Рада тебя видеть у нас, да и остальные обрадуются увидев новое лицо! Очень вовремя, мы как раз готовимся к началу ежемесячного планирования продаж. Знакомится с остальными будем на лету, по этому сразу внедряйся в рабочий процесс. Вот чем мы будем заниматься все следующие две недели: 
+            </div>
+          </div>
+        </div>  
+        
+        <div class="text">
+          <p>
+            <b>Процесс S&OP</b> – это поиск оптимального сценария баланса неограниченного спроса с учетом операционных ограничений компании в рамках сценарного анализа, в котором мы преобразуем спрос в практически осуществимый производственный план путем совместного принятия решений и тщательного отслеживания общих показателей эффективности в течение предыдущих месяцев для достижения целей компании.
+          </p>
+          <p>
+            Результатом процесса является согласованный план продаж компании и задания на привлечение парка.
+          </p>
+          <p>
+            <span>Ключевые показатели эффективности:</span>
+            <ul>
+              <li>Cвоевременное формирование плана продаж</li>
+              <li>Точность выполнения плана продаж по ключевым клиентам</li>
+            </ul>      
+          </p>
+        </div>
+
+        <div class="tooltip">
+          <div class="tooltip-avatar"></div>
+          <div class="tooltip-content">
+            <div class="tooltip-content__title">
+              Пётр Семёнович ПГК:
+            </div>
+            <div class="tooltip-content__text">
+              <p>-Надеюсь у тебя есть такой опыт и в подобных процессах и задачах ты не новичок. Но прежде чем приступить к выполнению расчетов, хочу задать несколько вопросов про показатели, которые являются ключевыми для бизнес-процесса и которые умеет рассчитывать Оптимизатор, это знание пригодится тебе в работе, чтобы получить корректный результат. </p>
+              <p> Предлагаю немного себя проверить и узнать, как задаваемые параметры влияют на плановые экономические показатели. </p>
+            </div>
+          </div>
+        </div>
+
+        <button class="button" id="to_questions">К вопросам</button>
+        
+        <!-- Список вопросов -->
+
+        <!-- Вопрос 1-->
+        <div class="multiquestion next" question-id="1">
+          <div class="multiquestion-title">Задание</div>
+            
+          <div class="multiquestion-subtitle">
+            Что такое оборот вагона?
+          </div>
+      
+          <div class="multiquestion-item">
+            <div class="multiquestion-item__checkbox">
+              <input type="checkbox" />
+            </div>
+            <div class="multiquestion-item__text">
+              <span>
+                Время, затрачиваемое на выполнение цикла операций от момента окончания одной погрузки до момента окончания следующей погрузки или сдачи в груженом или порожнем состоянии, измеряется в сутках. Является основным показателем использования парка грузовых вагонов
+              </span>
+              <span class="multiquestion-item-answer multiquestion-item__correct-answer">
+                Среднее время, затрачиваемое вагоном рабочего парка, задействованного в перевозках, в целом по Компании от погрузки до следующей погрузки, включая следующие элементы: время в груженом и порожнем рейсах, простой станциях грузовых операций, а также на станциях, не связанных с грузовыми операциями
+              </span>
+            </div>
+          </div>
+      
+          <div class="multiquestion-item">
+            <div class="multiquestion-item__checkbox">
+              <input type="checkbox" />
+            </div>
+            <div class="multiquestion-item__text">
+              <span>
+                Оборот вагона осуществляется для изменения направления движения. В общем, оборот вагона – это сложный и трудоемкий процесс, который требует высокой квалификации и опыта у специалистов, занятых в этой области.
+              </span>
+              <span class="multiquestion-item-answer multiquestion-item__wrong-answer">
+                В данном случае речь идет о специальном устройстве «Вагоноопрокидыватель и не имеет отношения к расчету показателей
+              </span>
+            </div>
+          </div>
+      
+          <div class="multiquestion-actions">
+            <button class="button show-answer">Узнать ответ</button>
+
+            <div>
+              <span class="multiquestion-title__section">Вводная часть&nbsp;&rarr;&nbsp;</span>
+              <span class="multiquestion-title__task">Задание 1/6</span>
+            </div>
+          </div>
+        </div> 
+
+        <!-- Вопрос 2 -->
+        <div class="multiquestion next" question-id="2">
+          <div class="multiquestion-title">Задание</div>
+          
+          <div class="multiquestion-subtitle">
+            На какие показатели влияет оборот вагона?
+          </div>
+    
+          <div class="multiquestion-item">
+            <div class="multiquestion-item__checkbox">
+              <input type="checkbox" />
+            </div>
+
+            <div class="multiquestion-item__text">
+              <span>
+                Рабочий парк, Доходность, Маржинальный доход
+              </span>
+              <span class="multiquestion-item-answer multiquestion-item__correct-answer">
+                При ускорении оборота вагона происходит высвобождение рабочего парка, себестоимость перевозок в части затрат будет уменьшаться, а маржинальный доход при этом будет увеличиваться, таким образом повысится доходность на вагон в сутки.
+              </span>
+            </div>
+          </div>
+    
+          <div class="multiquestion-item">
+            <div class="multiquestion-item__checkbox">
+              <input type="checkbox" />
+            </div>
+
+            <div class="multiquestion-item__text">
+              <span>
+                Выручка, Расстояние, Удельная выручка
+              </span>
+              <span class="multiquestion-item-answer multiquestion-item__wrong-answer">
+                Данные показатели не входят в цикл операций от момента начала погрузки груза до момента следующего начала погрузки в тот же вагон, поэтому не оказывают влияния на оборот вагона.
+              </span>
+            </div>
+          </div>
+    
+          <div class="multiquestion-actions">
+            <button class="button show-answer">Узнать ответ</button>
+            <div>
+              <span class="multiquestion-title__section">Вводная часть&nbsp;&rarr;&nbsp;</span>
+              <span class="multiquestion-title__task">Задание 2/6</span>
+            </div>
+          </div>
+        </div> 
+
+        <!-- Вопрос 3 -->
+        <div class="multiquestion next" question-id="3">
+          <div class="multiquestion-title">Задание</div>
+          
+          <div class="multiquestion-subtitle">
+            Оборот вагона и "НКО", а есть ли между ними связь?
+          </div>
+    
+          <div class="multiquestion-item">
+            <div class="multiquestion-item__checkbox">
+              <input type="checkbox" />
+            </div>
+            <div class="multiquestion-item__text">
+              Все элементы НКО являются частью оборота
+              <span class="multiquestion-item-answer multiquestion-item__correct-answer">
+                Оборот включает в себя начально-конечные операции, т.е. простой под погрузкой и простой под выгрузкой
+              </span>
+            </div>
+          </div>
+    
+          <div class="multiquestion-item">
+            <div class="multiquestion-item__checkbox">
+              <input type="checkbox" />
+            </div>
+            <div class="multiquestion-item__text">
+              Оборот вагона и НКО не имеют ничего общего
+              <span class="multiquestion-item-answer multiquestion-item__wrong-answer">
+                В полный цикл оборота вагона входят простои под погрузкой/выгрузкой и являются элементами оборота
+              </span>
+            </div>
+          </div>
+    
+          <div class="multiquestion-actions">
+              <button class="button show-answer">Узнать ответ</button>
+
+              <div>
+                <span class="multiquestion-title__section">Вводная часть&nbsp;&rarr;&nbsp;</span>
+                <span class="multiquestion-title__task">Задание 3/8</span>
+              </div>
+          </div>
+        </div>
+
+        <!-- Вопрос 4 -->
+        <div class="next" question-id="4">
+          <div class="tooltip">
+            <div class="tooltip-avatar"></div>
+            <div class="tooltip-content">
+              <div class="tooltip-content__title">
+                Пётр Семёнович ПГК:
+              </div>
+              <div class="tooltip-content__text">
+                <p>
+                  -Класс, я знал, что ты прекрасно разбираешься в логистике! Ты не хуже меня можешь подвести итоги по обороту:
+                </p>
+              </div>
+            </div>
+          </div> 
+  
+          <div class="text">
+            <p>
+              <b>Подведём итоги:</b>
+            </p>
+  
+            <p>
+              На показатель Оборот вагона влияет дата расчета, а также дата, тип, период НКО. При заполнении информации о плане нужно максимально точно задать эти параметры.
+            </p>
+  
+            <p>
+              <b>Существуют следующие типы НКО:</b>
+            </p>
+  
+            <p>
+              На показатель `Оборот вагона` влияет дата расчета, а также дата, тип, период НКО. При заполнении информации о плане нужно максимально точно задать эти параметры.
+            </p>
+            <p>
+              <b>Существуют следующие типы НКО:</b>
+              <ul>
+                <li>Факт – фактические данные по простоям под ГО на основе данных из SAP;</li>
+                <li>ТОУ - данные по простоям от Производственной системы;</li>
+                <li>Факт без выбросов - фактические данные по простоям из SAP, очищенные от "выбросов". Выбросы - простои менее 15 мин и свыше 10 суток</li>
+                <li>ДСЦ - данные по простоям из договора согласования цены (ДСЦ)</li>
+              </ul>
+            </p>
+            <p>
+              <b>Периоды НКО:</b>
+              <ul>
+                <li>Год – средневзвешенное значение по простою за 365 дней (от даты указанной при выборе Даты НКО);</li>
+                <li>Сезонность - средневзвешенный простой за сезон, в который попала дата НКО (январь-февраль, март-июнь, июль-август, сентябрь-октябрь, ноябрь-декабрь); </li>
+                <li>Последний месяц - средневзвешенный простой за 30 дней, от выбранной даты НКО;</li>
+                <li>Последние 45 дней - средневзвешенный простой за 45 дней, от выбранной даты НКО;</li>
+              </ul>
+            </p>
+            <p>
+              <b>Для процесса S&OP предпочтительно применять следующие настройки:</b>
+              <ul>
+                <li>Тип НКО Факт/ Факт без выбросов</li>
+                <li>Период НКО Последний месяц/Последние 45 дней</li>
+              </ul>
+            </p>
+            <p>
+              Дополнительно можно ознакомиться тут:
+            </p>
+            <p>
+              <span>Рекомендации по выбору даты фактических НКО: <a href="https://conf.pgk.ru/pages/viewpage.action?pageId=71910937">https://conf.pgk.ru/pages/viewpage.action?pageId=71910937</a> </span><br />
+              <span>Правила работы с новыми НКО: <a href="https://conf.pgk.ru/pages/viewpage.action?pageId=71924094">https://conf.pgk.ru/pages/viewpage.action?pageId=71924094</a></span>
+            </p>
+          </div>
+  
+          <div class="tooltip">
+            <div class="tooltip-avatar"></div>
+            <div class="tooltip-content">
+              <div class="tooltip-content__title">
+                Пётр Семёнович ПГК:
+              </div>
+              <div class="tooltip-content__text">
+                <p>
+                  -Ты уже знаешь, что правильные настройки для выполнения расчета имеют значение. Давай продолжим и поговорим о банах и почему важно выбирать их правильно.  А ты помнишь, что это такое?
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="multiquestion">
+          <div class="multiquestion-title">Задание</div>
+          
+          <div class="multiquestion-subtitle">
+            Что же такое пресет Бан в Оптимизаторе?
+          </div>
+    
+          <div class="multiquestion-item">
+            <div class="multiquestion-item__checkbox">
+              <input type="checkbox" />
+            </div>
+            <div class="multiquestion-item__text">
+              Набор запрещающих настроек в специальном файле
+              <span class="multiquestion-item-answer multiquestion-item__correct-answer">
+                Бан - запрет на порожние рейсы между дорогами, т.е. запрещена регулировка (подсыл) порожних рейсов по определенным причинам, регламентирующим перевозочную деятельность на ж.д. транспорте.
+              </span>
+            </div>
+          </div>
+    
+          <div class="multiquestion-item">
+            <div class="multiquestion-item__checkbox">
+              <input type="checkbox" />
+            </div>
+            <div class="multiquestion-item__text">
+              Набор разрешающих настроек в специальном файле
+              <span class="multiquestion-item-answer multiquestion-item__wrong-answer">
+                Для корректного расчета затрат на порожние рейсы, важно, чтобы Оптимизатор осуществлял подсыл порожних вагонов под погрузку с учетом запрещающих настроек и не заадресовывал вагоны туда, куда этого делать нельзя.
+              </span>
+            </div>
+          </div>
+    
+          <div class="multiquestion-actions">
+             <button class="button show-answer">Узнать ответ</button>
+
+             <div>
+               <span class="multiquestion-title__section">Вводная часть&nbsp;&rarr;&nbsp;</span>
+               <span class="multiquestion-title__task">Задание 4/6</span>
+             </div>
+          </div>
+          </div>
+        </div>
+        
+        <!--Вопрос 5 -->
+        <div class="next" question-id="5">
+          <div class="tooltip">
+            <div class="tooltip-avatar"></div>
+            <div class="tooltip-content">
+              <div class="tooltip-content__title">
+                Пётр Семёнович ПГК:
+              </div>
+              <div class="tooltip-content__text">
+                <p>
+                  -Надеюсь у тебя есть такой опыт и в подобных процессах и задачах ты не новичок. Но прежде чем приступить к выполнению расчетов, хочу задать несколько вопросов про показатели, которые являются ключевыми для бизнес-процесса и которые умеет рассчитывать Оптимизатор, это знание пригодится тебе в работе, чтобы получить корректный результат.
+                </p>
+                <p>
+                  Предлагаю немного себя проверить и узнать, как задаваемые параметры влияют на плановые экономические показатели.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="multiquestion">
+            <div class="multiquestion-title">Задание</div>
+              
+            <div class="multiquestion-subtitle">
+              Выбери правильное определение
+            </div>
+      
+            <div class="multiquestion-item">
+              <div class="multiquestion-item__checkbox">
+                <input type="checkbox" />
+              </div>
+              <div class="multiquestion-item__text">
+                Вертушка – это многократное обращение состава по одному и тому же маршруту
+                <span class="multiquestion-item-answer multiquestion-item__correct-answer">
+                  Бан - запрет на порожние рейсы между дорогами, т.е. запрещена регулировка (подсыл) порожних рейсов по определенным причинам, регламентирующим перевозочную деятельность на ж.д. транспорте.
+                </span>
+              </div>
+            </div>
+      
+            <div class="multiquestion-item">
+              <div class="multiquestion-item__checkbox">
+                <input type="checkbox" />
+              </div>
+              <div class="multiquestion-item__text">
+                Вертушка - это перекресток, на котором происходит изменение направления движения поездов. Обычно вертушка устанавливается на местах, где происходит переход со станции на другой железнодорожный участок или на другой путь.
+                <span class="multiquestion-item-answer multiquestion-item__wrong-answer">
+                  Для корректного расчета затрат на порожние рейсы, важно, чтобы Оптимизатор осуществлял подсыл порожних вагонов под погрузку с учетом запрещающих настроек и не заадресовывал вагоны туда, куда этого делать нельзя.
+                </span>
+              </div>
+            </div>
+      
+            <div class="multiquestion-actions">
+              <button class="button show-answer">Узнать ответ</button>
+
+              <div>
+                <span class="multiquestion-title__section">Вводная часть&nbsp;&rarr;&nbsp;</span>
+                <span class="multiquestion-title__task">Задание 5/6</span>
+              </div>
+            </div>
+          </div> 
+
+          <div class="tooltip">
+            <div class="tooltip-avatar"></div>
+            <div class="tooltip-content">
+              <div class="tooltip-content__title">
+                Пётр Семёнович ПГК:
+              </div>
+              <div class="tooltip-content__text">
+                <p>
+                  - Смотри, запомнить просто, для процесса S&OP я рекомендую брать настройки пресета банов с названием «План», звучит так же, точно не запутаешься! Эта таблица запретов имеет легкий набор банов и применяется для расчетов на будущий период.
+                </p>
+                <p>
+                  Дополнительно можно ознакомиться тут:
+                  Ядро. Руководство пользователя:
+                  <a href="https://conf.pgk.ru/pages/viewpage.action?pageId=26556617">https://conf.pgk.ru/pages/viewpage.action?pageId=26556617</a>
+                </p>
+                <p>
+                  -Когда ты будешь заполнять информацию  о плане, для выполнения своего первого расчета, ты увидишь, что там есть технологии, некоторые из них по умолчанию активны, некоторые нет. Давай проверим как хорошо ты читал инструкцию к Оптимизатору(smile)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Вопрос 6-->
+        <div class="next" question-id="6">
+          <div class="tooltip">
+            <div class="tooltip-avatar"></div>
+            <div class="tooltip-content">
+              <div class="tooltip-content__title">
+                Пётр Семёнович ПГК:
+              </div>
+              <div class="tooltip-content__text">
+                <p>
+                  -Помимо вертушек, мы активно используем технологию сдвоенных операций, или по простому "сдвойки". Это нужно для повышения точности расчета порожних рейсов
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="multiquestion">
+            <div class="multiquestion-title">Задание</div>
+              
+            <div class="multiquestion-subtitle">
+              Какое определение для сдвоенных операций можно считать правильным?
+            </div>
+      
+            <div class="multiquestion-item">
+              <div class="multiquestion-item__checkbox">
+                <input type="checkbox" />
+              </div>
+              <div class="multiquestion-item__text">
+                Погрузка и выгрузка осуществляются на одной и той же станции
+                <span class="multiquestion-item-answer multiquestion-item__correct-answer">
+                  Порожние рейсы не отображают внутристанционные перестановки на рейсы, по которым не предусмотрено оформление перевозочных документов (накладных)
+                </span>
+              </div>
+            </div>
+      
+            <div class="multiquestion-item">
+              <div class="multiquestion-item__checkbox">
+                <input type="checkbox" />
+              </div>
+              <div class="multiquestion-item__text">
+                Сдвоенные операции на железной дороге - это процесс сборки и/или разборки переставных путей на железнодорожной станции.
+                <span class="multiquestion-item-answer multiquestion-item__wrong-answer">
+                  Эти операции выполняются, когда грузовой состав необходимо перестроить с одного пути на другой для обеспечения более эффективной загрузки и разгрузки. Данный процесс не относится к технологиям сдвоенных операций, не влияет на точность расчета порожних рейсов.
+                </span>
+              </div>
+            </div>
+      
+            <div class="multiquestion-actions">
+              <button class="button show-answer">Узнать ответ</button>
+
+              <div>
+                <span class="multiquestion-title__section">Вводная часть&nbsp;&rarr;&nbsp;</span>
+                <span class="multiquestion-title__task">Задание 6/6</span>
+              </div>
+            </div>
+          </div> 
+        </div>
+
+        <!-- Вопрос 7 -->
+        <div class="next" question-id="7">
+          <div class="tooltip">
+            <div class="tooltip-avatar"></div>
+            <div class="tooltip-content">
+              <div class="tooltip-content__title">
+                Пётр Семёнович ПГК:
+              </div>
+              <div class="tooltip-content__text">
+                <p>
+                  - Надо помнить, что существуют и другие виды технологий, о них мы можем поговорить чуть позже, когда закончится доработка и их реализация. Когда это произойдет ты узнаешь об этом из информационной рассылки от Оптимизатор_инфо. Ребята из Опти каждые две недели добавляют что-то новенькое, чтобы упростить нам работу или добавить какие-то новые возможности, мы очень ценим их труд, не забывай проверять почту!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <p>Это был последний вопрос курса, на этом курс завершен!</p>
+
+          <a  href="#complete-dialog" class="button complete-button" rel="modal:open">Завершить</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="complete-dialog" class="modal">
+      <h2>Курс успешно завершён!</h2>
+
+      <a href="../../dashboard/dashboard.html">Перейти к списку курсов</a>
+    </div>
+  </body>
+</html>
