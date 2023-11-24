@@ -42,6 +42,11 @@ body {
   -webkit-animation: appear 0.2s ease-in;
 }
 
+.course-topic__list-item__title {
+  text-decoration: none;
+  color: #000;
+}
+
 .course-topic__list-item__success::after {
     content: '';
     position: absolute;

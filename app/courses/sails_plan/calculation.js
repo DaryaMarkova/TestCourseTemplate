@@ -16,7 +16,6 @@
       this$.parent().find('.tooltip').fadeOut();
       this$.parent().find('.text').fadeOut();
 
-
       switchNextQuestion();
     });
 
@@ -24,17 +23,15 @@
       currentQuestion$.find('.multiquestion-item-answer').slideDown(400);
     });
 
-    questions$.find('input[type="checkbox"]').change(function() {
-      setTimeout(() => {
-        currentQuestion$.hide(); 
-        switchNextQuestion()();
-      }, 1000);
+    $('.next-question').click(function() {
+      currentQuestion$.hide(); 
+      switchNextQuestion();
     })
   }
 
   function switchNextQuestion() {
-    questions$.eq(questionCount).fadeIn(500);
-    currentQuestion$ = questions$.eq(questionCount++);
+    questions$.eq(++questionCount).fadeIn(500);
+    currentQuestion$ = questions$.eq(questionCount);
   }
 
   init();
