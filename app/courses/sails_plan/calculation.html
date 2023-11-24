@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Webpage description goes here" />
+    <meta charset="utf-8">
+
+    <title>Курс "План продаж S&OP"</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../common.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+    <script defer src="calculation.js"></script>
+    <style>
+      .course-container {
+        margin-left: 40px;
+      }
+      .course-container__content {
+        width: 1064px;
+        margin: 48px auto;
+        line-height: 30px;
+      }
+      .tooltip {
+        margin-top: 32px;
+      }
+      .button {
+        margin-top: 48px;
+        cursor: pointer;
+      }
+      .complete-button {
+        margin: 48px 36%;
+      }
+      .complete-dialog {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="course-container">
+      <div class="breadcrumbs">
+        <a class="breadcrumb-link" href="../../dashboard/dashboard.html">Главная страница</a>
+        <a class="breadcrumb-link" href="../course.html" >Курс "План продаж S&OP"</a> 
+        <a class="breadcrumb-link finish-link">Знакомство с ключевыми показателями</a>
+      </div>
+
+      <div class="course-container__content">
+        <h2>Выполнение расчётов</h2>
+
+        <div class="next">
+          <div class="tooltip">
+            <div class="tooltip-avatar"></div>
+            <div class="tooltip-content">
+              <div class="tooltip-content__title">
+                Пётр Семёнович ПГК:
+              </div>
+            
+              <div class="tooltip-content__text">
+                <p>-&nbsp;Вижу у тебя получилась отличная база! Теперь, когда ты знаешь, что настройки при заполнении информации о плане нужно задать максимально точно, у тебя есть вводные данные по парку и обороту по РПС. Можно приступать к выполнению расчетов.</p>
+  
+                <p>-&nbsp;Для процесса S&OP, нужно выполнить несколько расчетов, что бы получить нужный сценарий. Цикл расчетов включает в себя следующие алгоритмы: </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="text">
+            <ul>
+              <li>
+                ПЭП грузовой базы - это первый и основной расчет, на базе которого будут выполняться прочие дочерние расчеты
+              </li>
+              <li>
+                Обратный вариационный расчет - дочерний расчет, с ним можно подрезать грузовую базу под нужный парк или количество вагоноотправок, доходность
+              </li>
+              <li>
+                Множественный вариационный расчет - дочерний, вспомогательный расчет, который показывает нужную точку отсечки при заданных параметрах, полученный результат можно применить к расчету Грузовая база под уровень доходности(НизДох)
+              </li>
+              <li>
+                Грузовая база под уровень доходности (НизДох) - дочерний расчет, применяемый в том случае, если ОВР не соответствует заданным параметрам, получена ошибка результата расчета
+              </li>
+              <li>
+                Эффект перевозки (искл) - дочерний расчет, применяется для того, что бы увидеть влияние какой либо перевозки на всю грузовую базу
+              </li>
+              <li>
+                -&nbsp;Может показаться немного сложно, но ты быстро привыкнешь и освоишься!
+              </li>
+            </ul>
+          </div>
+
+          <div class="tooltip">
+            <div class="tooltip-avatar"></div>
+            <div class="tooltip-content">
+              <div class="tooltip-content__title">
+                Пётр Семёнович ПГК:
+              </div>
+            
+              <div class="tooltip-content__text">
+                <p>-&nbsp;Может показаться немного сложно, но ты быстро привыкнешь и освоишься!</p>
+                <p>-&nbsp;А теперь давай начнём расчёты!</p>
+              </div>
+            </div>
+          </div>
+
+          <button id="to_questions" class="button">Далее</button>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
