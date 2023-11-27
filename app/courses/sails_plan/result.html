@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Webpage description goes here" />
+    <meta charset="utf-8">
+
+    <title>Курс "План продаж S&OP"</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../common.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+    <script defer src="result.js"></script>
+    <style>
+      .course-container {
+        margin-left: 40px;
+      }
+      .course-container__content {
+        width: 1064px;
+        margin: 48px auto;
+        line-height: 30px;
+      }
+      .tooltip {
+        margin-top: 32px;
+      }
+      .button {
+        margin-top: 48px;
+        cursor: pointer;
+      }
+      .complete-button {
+        margin: 48px 36%;
+      }
+      .complete-dialog {
+        text-align: center;
+      }
+    </style>
+
+    <body>
+      <div class="course-container">
+        <div class="breadcrumbs">
+          <a class="breadcrumb-link" href="../../dashboard/dashboard.html">Главная страница</a>
+          <a class="breadcrumb-link" href="../course.html" >Курс "План продаж S&OP"</a> 
+          <a class="breadcrumb-link finish-link">Блок интерпретации результатов</a>
+        </div>
+        <div class="course-container__content">
+          <h2>Интерпретация результатов</h2>
+
+          <div class="next">
+            <div class="tooltip">
+              <div class="tooltip-avatar"></div>
+              <div class="tooltip-content">
+                <div class="tooltip-content__title">
+                  Пётр Семёнович ПГК:
+                </div>
+              
+                <div class="tooltip-content__text">
+                  -&nbsp;Привет, в прошлом блоке мы разобрались, как создавать расчеты, но очень важно уметь правильно интерпретировать результаты, в этом блоке мы будем этим заниматься.
+                </div>
+              </div>
+            </div> 
+
+            <button id="to_questions" class="button">Далее</button>
+          </div> 
+
+          <div class="next">
+            <div class="text">
+              <h3>Интерпретация ПЭП грузовой базы:</h3>
+
+              <div class="tooltip">
+                <div class="tooltip-avatar"></div>
+                <div class="tooltip-content">
+                  <div class="tooltip-content__title">
+                    Пётр Семёнович ПГК:
+                  </div>
+                
+                  <div class="tooltip-content__text">
+                    <p>Что ж, в таблице с результатом расчета, нужно проверить  показатели:</p>
+                    <ol>
+                      <li>
+                        Груженой части (количество вагонов, выручка, ставка, расстояние) - данные должны соответствовать грузовой базе, по которой был подготовлен Шаблон;
+                      </li>
+                      <li>
+                        Порожней части (количество вагонов, затраты, расстояние, кпп);
+                      </li>
+                      <li>
+                        Ключевые показатели (доходность, рабочий парк, оборот, маржинальный доход) -не должно быть отрицательных значений, слишком высоких оборотов (например 100, 1000 и более)
+                      </li>
+                    </ol>
+                    <p>
+                      Так выглядит результат расчета:
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div style="width: 900px; margin-top: 48px;" class="card">
+                <h3 style="margin-top: 0px">Результат расчёта</h3>
+
+                <img width="880px" height="auto" src="./../../images/result-of-calculation.png" />
+              </div>
+
+              <div class="tooltip">
+                <div class="tooltip-avatar"></div>
+                <div class="tooltip-content">
+                  <div class="tooltip-content__title">
+                    <b>Миша, логист</b>
+                  </div>
+                
+                  <div class="tooltip-content__text">
+                    Привет, меня зовут Миша, я стажер в отделе логистики, только учусь считать в Оптимизаторе,  я выполнил свой первый расчет, помоги мне, пожалуйста,  разобраться с результатом расчета, все ли в нем корректно посчиталось? Не хочу опростоволоситься на испытательном сроке!
+                  </div>
+
+                </div>
+              </div>
+              <button class="button next-question">Далее</button>
+            </div>
+          </div>
+
+          <div class="multiquestion next">
+            <div class="multiquestion-title">Задание</div>
+
+            <div class="multiquestion-subtitle">
+              Покажи мне, какие из этих показателей рассчитаны корректно, а какие нет (можно выбрать несколько вариантов)
+            </div>
+
+            <div style="margin-top: 24px;"  class="card">
+              <img width="640px" height="auto" src="./../../images/result-of-calculation.png" /> 
+            </div>
+
+            <div class="multiquestion-item">
+              <div class="multiquestion-item__checkbox">
+                <input type="checkbox" />
+              </div>
+              <div class="multiquestion-item__text">
+                <span>
+                  Ставка груж (руб)
+                </span>
+                <span class="multiquestion-item-answer multiquestion-item__wrong-answer">
+                </span>
+              </div>
+            </div>
+
+            <div class="multiquestion-item">
+              <div class="multiquestion-item__checkbox">
+                <input type="checkbox" />
+              </div>
+              <div class="multiquestion-item__text">
+                <span>
+                  Затраты на вагон (руб)
+                </span>
+                <span class="multiquestion-item-answer multiquestion-item__wrong-answer">
+                </span>
+              </div>
+            </div>
+
+            <div class="multiquestion-item">
+              <div class="multiquestion-item__checkbox">
+                <input type="checkbox" />
+              </div>
+              <div class="multiquestion-item__text">
+                <span>
+                  Коэффициент порожнего пробега
+                </span>
+                <span class="multiquestion-item-answer multiquestion-item__wrong-answer">
+                </span>
+              </div>
+            </div>
+
+            <div class="multiquestion-item">
+              <div class="multiquestion-item__checkbox">
+                <input type="checkbox" />
+              </div>
+              <div class="multiquestion-item__text">
+                <span>
+                  Доходность (руб. на ваг в сут)
+                </span>
+                <span class="multiquestion-item-answer multiquestion-item__wrong-answer">
+                </span>
+              </div>
+            </div>
+
+            
+            <div class="multiquestion-item">
+              <div class="multiquestion-item__checkbox">
+                <input type="checkbox" />
+              </div>
+              <div class="multiquestion-item__text">
+                <span>
+                  Рабочий парк (ваг)
+                </span>
+                <span class="multiquestion-item-answer multiquestion-item__wrong-answer">
+                </span>
+              </div>
+            </div>
+
+            <div class="multiquestion-item">
+              <div class="multiquestion-item__checkbox">
+                <input type="checkbox" />
+              </div>
+              <div class="multiquestion-item__text">
+                <span>
+                  Оборот (ваг.сут)
+                </span>
+                <span class="multiquestion-item-answer multiquestion-item__wrong-answer">
+                </span>
+              </div>
+            </div>
+
+            <div class="multiquestion-actions">
+              <button class="button show-answer">Узнать ответ</button>
+  
+              <div>
+                <span class="multiquestion-title__section">Вводная часть&nbsp;&rarr;&nbsp;</span>
+                <span class="multiquestion-title__task">Задание 1/6</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+  </head>
+</html>
