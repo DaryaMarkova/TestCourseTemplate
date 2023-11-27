@@ -2,6 +2,7 @@
   let questionCount = 0;
 
   const questions$ = $('.next');
+  
   let currentQuestion$ = questions$.eq(questionCount);
   
   $('.multiquestion-item-answer').hide();
