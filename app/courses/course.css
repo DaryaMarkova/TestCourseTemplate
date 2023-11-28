@@ -42,6 +42,25 @@ body {
   -webkit-animation: appear 0.2s ease-in;
 }
 
+.course-topic__list-item::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: transparent;
+  border-radius: 16px;
+}
+
+.course-topic__list-item:hover::before {
+  content: '';
+  width: 100%;
+  transition: width 0.2s;
+  background: #969696;
+  opacity: 0.1;
+}
+
 .course-topic__list-item__title {
   text-decoration: none;
   color: #000;
